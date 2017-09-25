@@ -1,0 +1,29 @@
+<form class="form-horizontal">
+    <div class="controls">
+        <label class="checkbox">
+            <input type="checkbox" data-bind="checked: settings.plugins.HeaterTimeout.enabled">
+            Enable
+        </label>
+    </div>
+
+    <h3>Settings</h3>
+    <div class="control-group">
+        <label class="control-label">Polling Interval</label>
+        <div class="controls">
+            <div class="input-append">
+                <input type="number" step="any" min="1" class="input-mini text-right" data-bind="value: settings.plugins.HeaterTimeout.interval">
+                <span class="add-on">s</span>
+            </div>
+            <span class="help-inline">how frequently to check the heaters</span>
+        </div>
+
+
+        <label class="control-label">Heater Timeout</label>
+        <div class="controls">
+            <div class="input-append">
+                <input type="number" step="any" min="1" class="input-mini text-right" data-bind="value: settings.plugins.HeaterTimeout.timeout">
+                <span class="add-on">s</span>
+            </div>
+        </div>
+    </div>
+</form>
